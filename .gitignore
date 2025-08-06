@@ -1,0 +1,57 @@
+# ==================================================
+# Secret Files
+# NEVER commit your environment variables. This is the most important rule.
+# ==================================================
+.env
+.env.*
+
+# ==================================================
+# Python & Django
+# ==================================================
+
+# Virtual Environment
+# This folder contains all your installed packages and can be huge.
+# It should always be recreated from requirements.txt, not stored in git.
+venv/
+env/
+
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+# We are using PostgreSQL, but it's good practice to ignore SQLite files.
+db.sqlite3
+db.sqlite3-journal
+
+# Media files (user-uploaded content)
+media/
+
+# Static files (where 'collectstatic' places files for production)
+staticfiles/
+static_root/
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# ==================================================
+# Editor & OS Files
+# ==================================================
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
